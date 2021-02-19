@@ -55,6 +55,14 @@ img{
     flex-direction: column;
 }
 
+.menu_row{
+    display: flex;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .grid{
     display: grid;
     grid-template-columns: 30% 30%;
@@ -73,6 +81,7 @@ ul li{
 
 a{
     text-decoration: none;
+    color: #333;
 }
 
 input{
@@ -84,37 +93,113 @@ input:focus{
     outline: none;
 }
 
-/* header start */
-header{
-
+input::placeholder{
+    color: rgb(36, 34, 34);
 }
 
-.main_logo{}
-.main_logo ul{}
-.main_logo ul li{}
-.main_logo ul li a{}
-.main_logo ul li .input_box{}
-.main_logo ul li .input_box input{}
-.main_logo ul li .input_box a{}
+/* header start */
+header{
+    background-color: #3B5999;
+    padding: 10px 0;
+}
 
-nav{}
-nav .menu{}
+.main_logo{
+    max-width: 50%;
+    flex-basis: 50%;
+}
+.main_logo ul{
+    width: 100%;
+}
+.main_logo ul li{}
+.main_logo ul .f_icon a{
+    background-color: #fff;
+    height: 21px;
+    display: flex;
+    align-items: center;
+    width: 21px;
+    border-radius: 2px;
+}
+.main_logo ul .f_icon a i{
+    margin-left: 10px;
+    color: #3B5999;
+}
+.main_logo ul li .input_box{
+    width: 500px;
+    margin-left: 8px;
+    background-color: #fff;
+    border-radius: 2px;
+}
+.main_logo ul li .input_box input{
+    padding: 3px 6px;
+}
+/* .main_logo ul li .input_box input::placeholder{
+    color: rgb(36, 34, 34);
+} */
+
+.main_logo ul li .input_box a{
+    margin-right: 15px;
+}
+.main_logo ul li .input_box a i{
+    color: gray;
+    font-size: 12px;
+}
+
+nav{
+    max-width: 40%;
+    flex-basis: 40%;
+}
+nav .menu{
+    max-width: 40%;
+    flex-basis: 40%;
+}
+
+nav .header_icon, nav .login_icon{
+    max-width: 30%;
+    flex-basis: 30%;
+}
 nav .menu ul{}
 nav .menu ul li{}
-nav .menu ul li img{}
-nav .menu ul li a{}
-nav .menu ul li a span{}
+nav .menu ul li img{
+    height: 21px;
+    margin-right: 8px;
+    border-radius: 2px;
+}
+nav .menu ul li a{
+    color: #fff;
+    margin-right: 20px;
+}
+nav .menu ul li a span{
+    font-size: 11px;
+    font-weight: 400;
+    background-color: #324F79;
+    width: 12px;
+    padding-left: 3px;
+    display: inline-block;
+    border-radius: 5px;
+}
 
 nav .header_icon{}
-nav .header_icon ul{}
+nav .header_icon ul.row{
+    justify-content: center;
+}
 nav .header_icon ul li{}
-nav .header_icon ul li a{}
+nav .header_icon ul li a{
+    color: #000000a6;
+    margin-right: 10px;
+    font-size: 16px;
+}
 nav .header_icon ul li a i{}
 
 nav .login_icon{}
-nav .login_icon ul{}
+nav .login_icon ul.row{
+    justify-content: flex-end;
+}
 nav .login_icon ul li{}
-nav .login_icon ul li a{}
+nav .login_icon ul li a{
+    color: #000000a6;
+    margin-right: 7px;
+    font-size: 15px;
+}
 nav .login_icon ul li a i{}
 
 /* header end */
@@ -124,62 +209,156 @@ nav .login_icon ul li a i{}
 .banner_section{}
 
 /* banner leftSidebar start */
-.banner_section .left_sidebar{}
+.banner_section .left_sidebar{
+    flex-basis: 17%;
+    max-width: 17%;
+    margin-right: 1%;
+}
+
+.left_sidebar .page_identity{margin-top: 10px;}
+.left_sidebar .logo{
+    background-color: #fff;
+    padding: 4px;
+}
+.left_sidebar .logo img{
+    border: 1px solid #ece9e9;
+}
 
 
-.left_sidebar .page_identity{}
-.left_sidebar .logo{}
-.left_sidebar .logo img{}
+.page_title{
+    margin: 12px 0;
+}
 
+.page_title .row{
+    align-items: flex-end;
+}
+.page_title h1{
+    flex-basis: 80%;
+    max-width: 80%;
+    color: #333;
+    font-size: 27px;
+}
 
-.page_title{}
-.page_title h1{}
-.page_title span{}
-.page_title span i{}
+.page_title span{
+    flex-basis: 20%;
+    max-width: 20%;
+    margin-bottom: 5px;
+}
+.page_title span i{
+    font-size: 18px;
+    color: #000;
+}
+
+.page_title a{
+    color: gray;
+}
 
 .left_sidebar .sidebar_menu{}
 
 .sidebar_menu ul{}
-.sidebar_menu ul li{}
-.sidebar_menu ul li a{}
+.sidebar_menu ul li{
+    padding: 5px 10px;
+}
+.sidebar_menu ul li a{
+    font-size: 15px;
+}
 
-.sidebar_menu ul li:first-child{}
-.sidebar_menu ul li:first-child::before{}
-.sidebar_menu ul li:last-child a{}
+.sidebar_menu ul li:first-child{
+    position: relative;
+    background-color: #DFE0E4;
+    padding: 5px 10px;
+}
+.sidebar_menu ul .before::before{
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 3px;
+    top: 0;
+    left: 0;
+    background-color: #525F8C;
+}
+.sidebar_menu ul li:last-child a{
+    background-color: #45BD28;
+    color: #fff;
+    display: inline-block;
+    padding: 4px 7px;
+    border-radius: 2px;
+}
 
 /* banner leftSidebar end */
 
 
 /* banner mainbody start */
-.banner_section .main_body{}
+.banner_section .main_body{
+    flex-basis: 82%;
+    max-width: 82%;
+}
 
 .main_body .cover{}
 .main_body .cover .cover_img{}
 
-.cover_text{}
+.cover_text{
+    background-color: #fff;
+    padding: 10px;
+}
 
 .cover_text .cover_like_options{}
 
 .cover_like_options ul{}
-.cover_like_options ul li{}
+.cover_like_options ul li{
+    border: 1px solid #c5baba;
+    padding: 5px 8px;
+    border-radius: 2px;
+}
 .cover_like_options ul li a{}
 .cover_like_options ul li a i{}
+.cover_like_options ul li:nth-child(2) a i{
+    color: gray;
+}
+.cover_like_options ul li:first-child a:first-child i{
+    color: #3D5AA0;
+}
 .cover_like_options ul li a span{}
 
-.cover_like_options ul li a small.dot{}
+.cover_like_options ul li a small.dot{
+    width: 3px;
+    height: 3px;
+    border-radius: 100%;
+    background-color: gray;
+    display: inline-block;
+    margin-bottom: 3px;
+}
 
-.cover_text .contact_button{}
+.cover_text .contact_button{
+    width: 310px;
+    text-align: center;
+    background-color: #4083F8;
+    padding: 5px 0;
+    border-radius: 2px;
+}
 .cover_text .contact_button .c_button{}
-.cover_text .contact_button .c_button a{}
+.cover_text .contact_button .c_button a{
+    color: #fff;
+    cursor: pointer;
+}
 
 
 /* page post section start */
-.main_body .own_posts{}
+.main_body .own_posts{
+    flex-basis: 65%;
+    max-width: 65%;
+}
 
 /* write_something section start */
-.own_posts .write_something_section{}
+.own_posts .write_something_section{
+    background-color: #fff;
+    margin: 10px 0;
+}
 
-.own_posts .write_something_section .write_something_title{}
+.own_posts .write_something_section .write_something_title{
+    border-bottom: 1px solid #8080807d;
+    padding: 5px 10px;
+}
 
 .write_something_title .status_photos{}
 .status_photos ul{}
@@ -189,44 +368,81 @@ nav .login_icon ul li a i{}
 .status_photos ul li a span{}
 
 .write_something_title .page_icon{}
+/* .page_icon .row{
+    justify-content: center;
+} */
+.page_icon li:first-child{
+    width: 40px;
+}
 .page_icon li{}
 .page_icon li img{}
 
-.write_something_section .write_something_box{}
-
-.write_something_box .post_logo{}
+.write_something_section .write_something_box{
+    padding: 5px 0px;
+}
+.post_logo{
+    width: 60px;
+}
 .write_something_box .post_logo img{}
 
-.write_something_box input{}
+.write_something_box input{
+    width: 80%;
+    padding: 0 20px;
+}
 
 /* write_something section end */
 
 
 /* post section start */
-.own_posts .post{}
+.own_posts .post{
+    background-color: #fff;
+}
 
-.post_1{}
+.post_1{
+    margin-bottom: 10px;
+}
 
-.post_title{}
+.post_title{
+    padding: 8px 0;
+}
 .post_title .post_title_logo{}
 .post_title .post_title_logo img{}
 
 .post_title .page_name_info{}
-.post_title .page_name_info h2{}
+.post_title .page_name_info h4{
+    color: #5368a0;
+}
 
-.post_title .page_name_info .time_stamp{}
+.post_title .page_name_info .time_stamp{margin-top: 3px;font-size: 14px;}
 
 .page_name_info .time_stamp span{}
 .page_name_info .time_stamp a{}
-.page_name_info .time_stamp a i{}
+.page_name_info .time_stamp a i{
+    font-size: 13px;
+    color: #8D8D8D;
+}
 
-.post_headline{}
+.post_headline{
+    padding: 0px 10px;
+    color: #000;
+}
 
-.post_card{}
+.post_card{
+    padding: 10px;
+}
 
-.post_card .post_img{}
-.post_card .post_img h2{}
-
+.post_card .post_img{
+    width: 100%;
+    min-height: 320px;
+    background-color: #282832;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.post_card .post_img h2{
+    color: #fff;
+    font-size: 32px;
+}
 
 .post_body{}
 .post_body h3{}
@@ -268,7 +484,10 @@ nav .login_icon ul li a i{}
 /* page post section end */
 
 /* right bar start */
-.rightbar{}
+.rightbar{
+    flex-basis: 34%;
+    max-width: 34%;
+}
 
 /* business service start */
 .business_service{}
