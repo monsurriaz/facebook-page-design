@@ -37,11 +37,34 @@ img{
     margin: 0 auto;
 }
 
-.row{
+.row, .align_row, .sidebar_row, .between_row{
     display: flex;
     flex-wrap: wrap;
     -ms-flex-wrap: wrap;
+}
+
+.align_row{
     align-items: center;
+}
+
+.between_row{
+    justify-content: space-between;
+}
+
+.sidebar_row{
+    flex-direction: column;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 30% 30%;
+    grid-gap: 10px;
+}
+
+.photo_grid{
+    display: grid;
+    grid-template-columns: repeat(3, 33.33%);
+    grid-gap: 10px;
 }
 
 ul li{
@@ -51,3 +74,313 @@ ul li{
 a{
     text-decoration: none;
 }
+
+input{
+    border: 0;
+    background: transparent;
+}
+
+input:focus{
+    outline: none;
+}
+
+/* header start */
+header{
+
+}
+
+.main_logo{}
+.main_logo ul{}
+.main_logo ul li{}
+.main_logo ul li a{}
+.main_logo ul li .input_box{}
+.main_logo ul li .input_box input{}
+.main_logo ul li .input_box a{}
+
+nav{}
+nav .menu{}
+nav .menu ul{}
+nav .menu ul li{}
+nav .menu ul li img{}
+nav .menu ul li a{}
+nav .menu ul li a span{}
+
+nav .header_icon{}
+nav .header_icon ul{}
+nav .header_icon ul li{}
+nav .header_icon ul li a{}
+nav .header_icon ul li a i{}
+
+nav .login_icon{}
+nav .login_icon ul{}
+nav .login_icon ul li{}
+nav .login_icon ul li a{}
+nav .login_icon ul li a i{}
+
+/* header end */
+
+
+/* banner start */
+.banner_section{}
+
+/* banner leftSidebar start */
+.banner_section .left_sidebar{}
+
+
+.left_sidebar .page_identity{}
+.left_sidebar .logo{}
+.left_sidebar .logo img{}
+
+
+.page_title{}
+.page_title h1{}
+.page_title span{}
+.page_title span i{}
+
+.left_sidebar .sidebar_menu{}
+
+.sidebar_menu ul{}
+.sidebar_menu ul li{}
+.sidebar_menu ul li a{}
+
+.sidebar_menu ul li:first-child{}
+.sidebar_menu ul li:first-child::before{}
+.sidebar_menu ul li:last-child a{}
+
+/* banner leftSidebar end */
+
+
+/* banner mainbody start */
+.banner_section .main_body{}
+
+.main_body .cover{}
+.main_body .cover .cover_img{}
+
+.cover_text{}
+
+.cover_text .cover_like_options{}
+
+.cover_like_options ul{}
+.cover_like_options ul li{}
+.cover_like_options ul li a{}
+.cover_like_options ul li a i{}
+.cover_like_options ul li a span{}
+
+.cover_like_options ul li a small.dot{}
+
+.cover_text .contact_button{}
+.cover_text .contact_button .c_button{}
+.cover_text .contact_button .c_button a{}
+
+
+/* page post section start */
+.main_body .own_posts{}
+
+/* write_something section start */
+.own_posts .write_something_section{}
+
+.own_posts .write_something_section .write_something_title{}
+
+.write_something_title .status_photos{}
+.status_photos ul{}
+.status_photos ul li{}
+.status_photos ul li a{}
+.status_photos ul li a i{}
+.status_photos ul li a span{}
+
+.write_something_title .page_icon{}
+.page_icon li{}
+.page_icon li img{}
+
+.write_something_section .write_something_box{}
+
+.write_something_box .post_logo{}
+.write_something_box .post_logo img{}
+
+.write_something_box input{}
+
+/* write_something section end */
+
+
+/* post section start */
+.own_posts .post{}
+
+.post_1{}
+
+.post_title{}
+.post_title .post_title_logo{}
+.post_title .post_title_logo img{}
+
+.post_title .page_name_info{}
+.post_title .page_name_info h2{}
+
+.post_title .page_name_info .time_stamp{}
+
+.page_name_info .time_stamp span{}
+.page_name_info .time_stamp a{}
+.page_name_info .time_stamp a i{}
+
+.post_headline{}
+
+.post_card{}
+
+.post_card .post_img{}
+.post_card .post_img h2{}
+
+
+.post_body{}
+.post_body h3{}
+.post_body p{}
+.post_body span{}
+
+.like_comment_share{}
+.like_comment_share ul{}
+.like_comment_share ul li{}
+.like_comment_share ul li a{}
+.like_comment_share ul li a i{}
+.like_comment_share ul li a span{}
+
+
+.comment_box{}
+.comment_box_logo{}
+.comment_box_logo img{}
+
+.comment_box_input{}
+.comment_box_input input{}
+
+.comment_box_input_icon{}
+.comment_box_input_icon ul{}
+.comment_box_input_icon ul a{}
+.comment_box_input_icon ul a i{}
+
+
+/* post 2 start*/
+.post_2{}
+.post_2 .post_img img{}
+
+.post_2 .like_box{}
+.post_2 .like_box ul{}
+.post_2 .like_box ul li{}
+.post_2 .like_box ul li a{}
+.post_2 .like_box ul li a i{}
+/* post section end */
+
+/* page post section end */
+
+/* right bar start */
+.rightbar{}
+
+/* business service start */
+.business_service{}
+.business_service h2{}
+.business_service .rating_box{}
+.business_service .rating_box ul{}
+.business_service .rating_box ul li{}
+.business_service .rating_box ul li a{}
+.business_service .rating_box ul li a i{}
+
+
+/* post search start */
+.post_search{}
+.post_search ul{}
+.post_search ul li{}
+.post_search ul li a{}
+.post_search ul li a i{}
+
+
+/* page followers info start */
+.page_followers_info{}
+
+.page_followers_info{}
+.page_followers_info .people_like{}
+
+
+.follower_info{}
+
+.follower_info .people_icon{}
+.follower_info .people_icon img{}
+.follower_info .people_icon i{}
+
+.follower_info .like_info{}
+.follower_info .like_info h3{}
+.rightbar_common_p{}
+
+.people_here{}
+
+.invite{}
+
+.page_review_lite{}
+
+.blue_box{}
+.blue_box span{}
+.blue_box i{}
+
+
+/* about section */
+
+.about_section{}
+.rightbar_common_div{}
+.rightbar_common_div h2{}
+.about_section .map{}
+
+.location_info{}
+.address{}
+
+.address_details p, .map_save p{}
+.map_save{}
+
+.questions{}
+
+.questions .ques_icon{}
+.questions .ques_icon .ques_box{}
+.questions .ques_icon .ques_box i{}
+
+.ques_details a{}
+
+.website{}
+
+.web_details a{}
+
+
+/* share section start */
+.share_section{}
+
+.share_section h2{}
+.share_section h2 b{}
+
+.rated_page{}
+
+.write_review{}
+
+.review_page_icon{}
+.review_page_icon img{}
+.review_details a{}
+
+
+/* photos section */
+.photo_album{}
+.photo_album .single_photo{}
+.photo_album .single_photo img{}
+
+
+/* review section start */
+.review_section{}
+.people_review .blue_box span{}
+.people_review .blue_box i{}
+
+.people_review .people_review_info h3{}
+.people_review .people_review_info span{}
+.people_review .people_review_info span i{}
+
+
+.like_comment_box{}
+
+.like_info li{}
+.like_info li a{}
+.like_info li a i{}
+.like_info li a span{}
+
+/* right bar end */
+
+/* banner mainbody end */
+/* banner section end */

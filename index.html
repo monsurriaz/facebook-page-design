@@ -18,18 +18,20 @@
       <div class="container">
         <div class="row">
           <div class="main_logo">
-            <ul class="ul">
+            <ul class="row">
               <li>
                 <a href="#">
                   <i class="fab fa-facebook-f"></i>
                 </a>
               </li>
               <li>
-                <div class="row">
-                  <input placeholder="Every Interaction" type="text" />
-                  <a href="#">
-                    <i class="fas fa-search"></i>
-                  </a>
+                <div class="input_box">
+                  <div class="row">
+                    <input placeholder="Every Interaction" type="text" />
+                    <a href="#">
+                      <i class="fas fa-search"></i>
+                    </a>
+                  </div>
                 </div>
               </li>
             </ul>
@@ -39,17 +41,12 @@
               <div class="menu">
                 <ul class="row">
                   <li>
-                    <a href="#">
-                      <img src="./images/logo.png" alt="logo" />
-                    </a>
+                    <img src="./images/logo_icon.png" alt="logo" />
                   </li>
                   <li><a href="#"> Alex </a></li>
                   <li>
                     <a href="#">Home <span>5</span> </a>
                   </li>
-                  <li><a href="#"></a></li>
-                  <li><a href="#"></a></li>
-                  <li><a href="#"> </a></li>
                 </ul>
               </div>
 
@@ -89,22 +86,26 @@
     <!-- header end -->
 
     <!--banner start-->
-    <section>
+    <section class="banner_section">
       <div class="container">
         <div class="row">
           <!-- left sidebar start -->
           <div class="left_sidebar">
             <div class="page_identity">
               <div class="sidebar_row">
-                <div class="logo"></div>
-                <div class="title">
+                <div class="logo">
+                  <img src="./images/logo.png" alt="logo" />
+                </div>
+                <div class="page_title">
                   <h1>Every Interaction</h1>
                   <span><i class="fas fa-check-circle"></i></span>
                 </div>
               </div>
             </div>
+
+            <!-- sidebar menu -->
             <div class="sidebar_menu">
-              <ul>
+              <ul class="sidebar_row">
                 <li><a href="#"> Home </a></li>
                 <li><a href="#"> About </a></li>
                 <li><a href="#"> Notes </a></li>
@@ -117,32 +118,24 @@
                 <li><a href="#"> Create a Page </a></li>
               </ul>
             </div>
-            <ul>
-              <li><a href=""></a></li>
-              <li><a href=""></a></li>
-              <li><a href=""></a></li>
-              <li><a href=""></a></li>
-              <li><a href=""></a></li>
-              <li><a href=""></a></li>
-            </ul>
           </div>
           <!-- left sidebar end -->
 
           <!-- main body start -->
-          <div class="main-body">
+          <div class="main_body">
             <!--banner row -->
             <div class="row">
-              <div class="banner">
-                <div class="banner_img">
+              <div class="cover">
+                <div class="cover_img">
                   <img src="./images/banner.jpg" alt="banner" />
                 </div>
-                <div class="banner_text">
+                <div class="cover_text">
                   <div class="row">
-                    <div class="like_options">
+                    <div class="cover_like_options">
                       <ul class="row">
                         <li>
                           <a href="#">
-                            <i class="fas fa-thumbs-up"></i> Liked
+                            <i class="fas fa-thumbs-up"></i> <span>Liked</span>
                             <a href="#"
                               ><i class="fas fa-caret-down caret"></i
                             ></a>
@@ -150,15 +143,17 @@
                         </li>
                         <li>
                           <a href="#">
-                            <i class="fab fa-facebook-messenger"></i> Message
+                            <i class="fab fa-facebook-messenger"></i>
+                            <span>Message</span>
                           </a>
                         </li>
                         <li>
                           <a href="#">
-                            <span class="dot"></span>
-                            <span class="dot"></span>
-                            <span class="dot"></span>
-                            More <i class="fas fa-caret-down caret"></i>
+                            <small class="dot"></small>
+                            <small class="dot"></small>
+                            <small class="dot"></small>
+                            <span>More</span>
+                            <i class="fas fa-caret-down caret"></i>
                           </a>
                         </li>
                       </ul>
@@ -181,24 +176,26 @@
                   <!-- write_something section start-->
                   <div class="write_something_section">
                     <div class="write_something_title">
-                      <div class="row">
+                      <div class="between_row">
                         <div class="status_photos">
-                          <ul>
+                          <ul class="row">
                             <li>
                               <a href="#">
-                                <i class="fas fa-pen-square"></i> Status
+                                <i class="fas fa-pen-square"></i>
+                                <span>Status</span>
                               </a>
                             </li>
                             <li>
                               <a href="#">
-                                <i class="fas fa-image"></i> Photo/Video
+                                <i class="fas fa-image"></i>
+                                <span>Photo/Video</span>
                               </a>
                             </li>
                           </ul>
                         </div>
-                        <div class="site_icon">
+                        <div class="page_icon">
                           <li>
-                            <img src="./images/logo.png" alt="logo" />
+                            <img src="./images/logo_icon.png" alt="logo" />
                             <i class="fas fa-caret-down caret"></i>
                           </li>
                         </div>
@@ -209,9 +206,13 @@
                     <div class="write_something_box">
                       <div class="row">
                         <div class="post_logo">
-                          <img src="./images/logo.png" alt="logo" />
+                          <img src="./images/logo_icon.png" alt="logo" />
                         </div>
-                        <input class="write_post" type="text" />
+                        <input
+                          class="write_post"
+                          type="text"
+                          placeholder="Write something on this Page..."
+                        />
                       </div>
                     </div>
                   </div>
@@ -224,7 +225,7 @@
                     <div class="post_title">
                       <div class="row">
                         <div class="post_title_logo">
-                          <img src="./images/logo.png" alt="logo" />
+                          <img src="./images/logo_icon.png" alt="logo" />
                         </div>
                         <div class="page_name_info">
                           <h2>Every Interaction</h2>
@@ -261,7 +262,7 @@
                       </div>
                     </div>
                     <div class="like_comment_share">
-                      <ul>
+                      <ul class="row">
                         <li>
                           <a href="#">
                             <i class="fas fa-thumbs-up"></i> <span>Like</span>
@@ -283,10 +284,10 @@
                     <div class="comment_box">
                       <div class="row">
                         <div class="comment_box_logo">
-                          <img src="./images/logo.png" alt="logo" />
+                          <img src="./images/logo_icon.png" alt="logo" />
                         </div>
                         <div class="comment_box_input">
-                          <div class="row">
+                          <div class="between_row">
                             <input
                               type="text"
                               placeholder="Write a comment.."
@@ -382,7 +383,7 @@
                           <img src="./images/logo.png" alt="logo" />
                         </div>
                         <div class="comment_box_input">
-                          <div class="row">
+                          <div class="between_row">
                             <input
                               type="text"
                               placeholder="Write a comment.."
@@ -476,7 +477,7 @@
 
                   <!--post search start-->
                   <div class="post_search">
-                    <ul>
+                    <ul class="row">
                       <li>
                         <a href="#">
                           <i class="fas fa-search"></i>
@@ -486,57 +487,62 @@
                     </ul>
                   </div>
 
-                  <!--page_followers_info -->
+                  <!-- page followers info -->
                   <div class="page_followers_info">
-                    <div class="people_like follower_info">
-                      <div class="row">
-                        <div class="people_icon">
-                          <img src="" alt="" />
-                        </div>
-                        <div class="like_info">
-                          <h3>306 people like this</h3>
-                          <p class="rightbar_common_p">Alex and 3 other friends</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="people_here follower_info">
-                      <div class="row">
-                        <div class="people_icon">
-                          <img src="" alt="" />
-                        </div>
-                        <div class="like_info">
-                          <h3>9 people have been here</h3>
-                          <p class="rightbar_common_p">Alex Marin</p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="invite follower_info">
-                      <div class="row">
-                        <div class="people_icon">
-                          <img src="" alt="" />
-                        </div>
-                        <div class="like_info">
-                          <h3>Invite friends to like page</h3>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="page_review_lite follower_info">
-                      <div class="row">
-                        <div class="people_icon">
-                          <div class="blue_box">
-                            4.7 <i class="fas fa-star"></i>
+                    <div class="sidebar_row">
+                      <div class="people_like follower_info">
+                        <div class="align_row">
+                          <div class="people_icon">
+                            <img src="./images/user.jpg" alt="" />
+                          </div>
+                          <div class="like_info">
+                            <h3>306 people like this</h3>
+                            <p class="rightbar_common_p">
+                              Alex and 3 other friends
+                            </p>
                           </div>
                         </div>
-                        <div class="like_info">
-                          <h3>4.7 of 5 stars 3 reviews</h3>
-                          <p class="rightbar_common_p">View reviews</p>
+                      </div>
+                      <div class="people_here follower_info">
+                        <div class="row">
+                          <div class="people_icon">
+                            <img src="./images/user.jpg" alt="" />
+                          </div>
+                          <div class="like_info">
+                            <h3>9 people have been here</h3>
+                            <p class="rightbar_common_p">Alex Marin</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="invite follower_info">
+                        <div class="row">
+                          <div class="people_icon">
+                            <img src="" alt="" />
+                          </div>
+                          <div class="like_info">
+                            <h3>Invite friends to like page</h3>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="page_review_lite follower_info">
+                        <div class="row">
+                          <div class="people_icon">
+                            <div class="blue_box">
+                              <span>4.7</span> <i class="fas fa-star"></i>
+                            </div>
+                          </div>
+                          <div class="like_info">
+                            <h3>4.7 of 5 stars 3 reviews</h3>
+                            <p class="rightbar_common_p">View reviews</p>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                   <!--page_followers_info -->
+
 
                   <!-- about section -->
                   <div class="about_section rightbar_common_div">
@@ -573,7 +579,7 @@
                           </div>
                         </div>
                         <div class="call follower_info">
-                          <div class="row">
+                          <div class="align_row">
                             <div class="call_icon people_icon">
                               <i class="fas fa-phone-alt"></i>
                             </div>
@@ -583,7 +589,7 @@
                           </div>
                         </div>
                         <div class="questions follower_info">
-                          <div class="row">
+                          <div class="align_row">
                             <div class="ques_icon people_icon">
                               <div class="ques_box">
                                 <i class="fas fa-question"></i>
@@ -595,7 +601,7 @@
                           </div>
                         </div>
                         <div class="website follower_info">
-                          <div class="row">
+                          <div class="align_row">
                             <div class="web_icon people_icon">
                               <i class="fas fa-globe"></i>
                             </div>
@@ -612,21 +618,21 @@
 
                   <!--share section start-->
                   <div class="share_section">
-                    <h2>Share your opinion about Every Interaction!</h2>
+                    <h2>Share your opinion about <b>Every Interaction!</b></h2>
                     <div class="rated_page">
-                      <div class="row">
+                      <div class="align_row">
                         <div class="blue_box">
                           4.7 <i class="fas fa-star"></i>
                         </div>
                         <p class="rightbar_common_p">You rated this page</p>
                       </div>
                     </div>
-                    <div class="website follower_info">
-                      <div class="row">
-                        <div class="web_icon people_icon">
-                          <img src="./images/logo.png" alt="logo">
+                    <div class="write_review follower_info">
+                      <div class="align_row">
+                        <div class="review_page_icon people_icon">
+                          <img src="./images/logo_icon.png" alt="logo" />
                         </div>
-                        <div class="web_details like_info">
+                        <div class="review_details like_info">
                           <a href="#">Write your review</a>
                         </div>
                       </div>
@@ -638,33 +644,33 @@
                   <div class="photos rightbar_common_div">
                     <h2>Photos</h2>
                     <div class="photo_album">
-                      <div class="row">
+                      <div class="photo_grid">
                         <div class="single_photo">
-                          <img src="./images/1.jpg" alt="photo">
+                          <img src="./images/1.jpg" alt="photo" />
                         </div>
                         <div class="single_photo">
-                          <img src="./images/2.jpg" alt="photo">
+                          <img src="./images/2.jpg" alt="photo" />
                         </div>
                         <div class="single_photo">
-                          <img src="./images/3.jpg" alt="photo">
+                          <img src="./images/3.jpg" alt="photo" />
                         </div>
                         <div class="single_photo">
-                          <img src="./images/4.jpg" alt="photo">
+                          <img src="./images/4.jpg" alt="photo" />
                         </div>
                         <div class="single_photo">
-                          <img src="./images/9.jpg" alt="photo">
+                          <img src="./images/9.jpg" alt="photo" />
                         </div>
                         <div class="single_photo">
-                          <img src="./images/5.jpg" alt="photo">
+                          <img src="./images/5.jpg" alt="photo" />
                         </div>
                         <div class="single_photo">
-                          <img src="./images/6.jpg" alt="photo">
+                          <img src="./images/6.jpg" alt="photo" />
                         </div>
                         <div class="single_photo">
-                          <img src="./images/7.jpg" alt="photo">
+                          <img src="./images/7.jpg" alt="photo" />
                         </div>
                         <div class="single_photo">
-                          <img src="./images/8.jpg" alt="photo">
+                          <img src="./images/8.jpg" alt="photo" />
                         </div>
                       </div>
                     </div>
@@ -675,38 +681,38 @@
                   <div class="review_section rightbar_common_div">
                     <h1>Reviews</h1>
                     <div class="people_review follower_info">
-                      <div class="row">
+                      <div class="align_row">
                         <div class="people_icon">
                           <div class="blue_box">
-                            4.7 <i class="fas fa-star"></i>
+                            <span>4.7</span> <i class="fas fa-star"></i>
                           </div>
                         </div>
                         <div class="like_info">
                           <h3>4.7 of 5 stars</h3>
-                          <p class="rightbar_common_p"> 3 reviews</p>
+                          <p class="rightbar_common_p">3 reviews</p>
                         </div>
                       </div>
                     </div>
                     <div class="people_review follower_info">
-                      <div class="row">
+                      <div class="align_row">
                         <div class="people_icon">
-                          <img src="" alt="" />
+                          <img src="./images/user.jpg" alt="" />
                         </div>
-                        <div class="like_info">
+                        <div class="like_info people_review_info">
                           <h3>306 people like this</h3>
-                          <span class="">5<i class="fas fa-star"></i></span>
-                          <p class="rightbar_common_p">Alex and 3 other friends</p>
+                          <span>5<i class="fas fa-star"></i></span>
+                          <p class="rightbar_common_p">
+                            Alex and 3 other friends
+                          </p>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <!--revies section start -->
+                  <!--revies section end -->
 
                   <div class="like_comment_box">
                     <div class="row">
-                      <div class="people_icon">
-
-                      </div>
+                      <div class="people_icon"></div>
                       <div class="like_info">
                         <ul class="row">
                           <li>
@@ -724,7 +730,6 @@
                       </div>
                     </div>
                   </div>
-
                 </div>
               </div>
               <!-- right side bar end-->
