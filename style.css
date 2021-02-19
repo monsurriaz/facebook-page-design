@@ -74,7 +74,6 @@ img {
 .photo_grid {
   display: grid;
   grid-template-columns: repeat(3, 33.33%);
-  grid-gap: 10px;
 }
 
 ul li {
@@ -366,8 +365,8 @@ nav .login_icon ul li a i {
 
 /* page post section start */
 .main_body .own_posts {
-  flex-basis: 65%;
-  max-width: 65%;
+  flex-basis: 62%;
+  max-width: 62%;
 }
 
 /* write_something section start */
@@ -520,7 +519,9 @@ nav .login_icon ul li a i {
 .like_comment_share ul li a span {
 }
 
-.comment_box {background-color: #F6F7FC;}
+.comment_box {
+  background-color: #f6f7fc;
+}
 .comment_box_logo {
   width: 43px;
   margin: 5px;
@@ -552,20 +553,35 @@ nav .login_icon ul li a i {
 }
 
 /* post 2 start*/
-.post_2 {margin-bottom: 10px;}
+.post_2 {
+  margin-bottom: 10px;
+}
 .post_2 .post_img img {
 }
 
-.post_2 .like_box {background-color: #F6F7FC;padding: 8px 10px;}
+.post_2 .like_box {
+  background-color: #f6f7fc;
+  padding: 8px 10px;
+}
 .post_2 .like_box ul {
 }
 .post_2 .like_box ul li {
 }
-.post_2 .like_box ul li a {display: block;width: 22px;height: 22px;background-color: #4575B5;border-radius: 100%;}
-.post_2 .like_box ul li a i {color: #fff;margin: 2px 0 0 5px;font-size: 13px;}
+.post_2 .like_box ul li a {
+  display: block;
+  width: 22px;
+  height: 22px;
+  background-color: #4575b5;
+  border-radius: 100%;
+}
+.post_2 .like_box ul li a i {
+  color: #fff;
+  margin: 2px 0 0 5px;
+  font-size: 13px;
+}
 
-.post_3{
-    padding-bottom: 10px;
+.post_3 {
+  padding-bottom: 10px;
 }
 /* post section end */
 
@@ -573,40 +589,64 @@ nav .login_icon ul li a i {
 
 /* right bar start */
 .rightbar {
-  flex-basis: 34%;
-  max-width: 34%;
+  flex-basis: 37%;
+  max-width: 37%;
 }
 
 /* business service start */
 .business_service {
+  margin: 10px 0;
+  background-color: #fff;
+  padding: 10px;
 }
-.business_service h2 {
+.business_service h4 {
+  font-size: 15px;
+  color: #333;
 }
 .business_service .rating_box {
+  padding-top: 5px;
 }
 .business_service .rating_box ul {
 }
 .business_service .rating_box ul li {
 }
+
 .business_service .rating_box ul li a {
+  color: #3c64bc;
+  font-size: 13px;
+  margin-right: 5px;
+}
+
+.business_service .rating_box ul li:first-child a {
+  margin-right: 5px;
+
+  font-size: 16px;
 }
 .business_service .rating_box ul li a i {
 }
 
 /* post search start */
 .post_search {
+  background-color: #fff;
+  padding: 10px;
+  font-size: 14px;
 }
 .post_search ul {
 }
 .post_search ul li {
 }
 .post_search ul li a {
+  color: gray;
+  margin-right: 15px;
+  text-transform: capitalize;
 }
 .post_search ul li a i {
 }
 
 /* page followers info start */
 .page_followers_info {
+  margin: 10px 0;
+  background-color: #fff;
 }
 
 .page_followers_info {
@@ -615,11 +655,18 @@ nav .login_icon ul li a i {
 }
 
 .follower_info {
+  padding: 9px;
+  border-bottom: 1px solid #ded6d6;
 }
 
 .follower_info .people_icon {
+  flex-basis: 17%;
+  max-width: 17%;
 }
 .follower_info .people_icon img {
+  width: 78%;
+  height: 86%;
+  object-fit: cover;
 }
 .follower_info .people_icon i {
 }
@@ -627,121 +674,148 @@ nav .login_icon ul li a i {
 .follower_info .like_info {
 }
 .follower_info .like_info h3 {
+  font-size: 16px;
+  color: #333;
+  font-weight: 500;
+  margin-bottom: 2px;
 }
 .rightbar_common_p {
+  color: #a0a4a7;
+  font-size: 13px;
 }
 
 .people_here {
 }
 
-.invite {
+.invite .menu_row {
+  text-align: center;
+}
+.invite .align_row {
+  height: 40px;
 }
 
 .page_review_lite {
 }
 
 .blue_box {
+  width: 80%;
+  background-color: #3161cc;
+  padding: 2px 2px;
+  color: #fff;
+  text-align: center;
+  border-radius: 22px;
 }
 .blue_box span {
+  font-size: 14px;
 }
 .blue_box i {
+  font-size: 12px;
 }
 
 /* about section */
 
 .about_section {
 }
-.rightbar_common_div {
-}
-.rightbar_common_div h2 {
-}
+.rightbar_common_div {background-color: #fff;}
+.rightbar_common_div h2 {font-size: 18px;padding: 10px;color: #333;border-bottom: 1px solid #d4d3d3;}
 .about_section .map {
 }
 
-.location_info {
-}
-.address {
+.location_info {padding: 10px;}
+.address {padding-bottom: 5px;}
+
+.address .address_icon, .ques_icon, .call_icon, .web_icon{
+
+flex-basis: 11% !important;
+
+max-width: 11% !important;
+
+
 }
 
-.address_details p,
-.map_save p {
+.address_details{
+    
+flex-basis: 79%;
+    
+max-width: 79%;
 }
+.address_details p,
+.map_save p {font-size: 13px;color: #A1ACCA;}
 .map_save {
 }
 
-.questions {
+.address .align_row, .call .align_row, .questions .align_row, .website .align_row{
+    min-height: 35px;
 }
+
+.questions {}
 
 .questions .ques_icon {
 }
-.questions .ques_icon .ques_box {
-}
+.questions .ques_icon .ques_box {width: 48%;padding: 1px;color: #859AC5;border: 1px solid #859AC5;}
 .questions .ques_icon .ques_box i {
 }
 
-.ques_details a {
-}
+.ques_details a {color: #859AC5;}
 
 .website {
 }
 
-.web_details a {
-}
+.web_details a {color: #606b8a;}
 
 /* share section start */
-.share_section {
-}
+.share_section {background-color: #fff;margin: 10px 0;padding: 10px;}
 
-.share_section h2 {
-}
+.share_section h2 {color: #333;font-size: 18px;}
 .share_section h2 b {
 }
 
 .rated_page {
+    padding: 15px 0;
+    border-bottom: 1px solid #d0c9c9;
 }
+.rated_page .blue_box{
+    
+width: 20%;
+    
+margin-right: 17px;
+}
+.write_review {padding-top: 9px;}
 
-.write_review {
-}
-
-.review_page_icon {
-}
+.review_page_icon {width: 50px;}
 .review_page_icon img {
 }
-.review_details a {
-}
+.review_details a {color: #606b8a;font-size: 14px;}
 
 /* photos section */
 .photo_album {
 }
-.photo_album .single_photo {
-}
+.photo_album .single_photo {padding: 3px;}
 .photo_album .single_photo img {
 }
 
 /* review section start */
-.review_section {
-}
+.review_section {margin-top: 10px;}
+
 .people_review .blue_box span {
 }
 .people_review .blue_box i {
 }
 
-.people_review .people_review_info h3 {
+.people_review .people_review_info h3 {color: #62708B;font-size: 15px;}
+.people_review .people_review_info span {font-size: 15px;color: #5A7DB5;}
+.people_review .people_review_info span i {font-size: 11px;margin: 0 0 0px 5px;}
+
+.like_comment_box{
+    background-color: #fff;
 }
-.people_review .people_review_info span {
-}
-.people_review .people_review_info span i {
+.like_comment_box .row{
+    justify-content: center;
 }
 
-.like_comment_box {
-}
-
-.like_info li {
-}
-.like_info li a {
-}
-.like_info li a i {
-}
+.like_info li {}
+.like_info li a {color: gray;margin-right: 15px;font-size: 14px;}
+.like_info li a i {margin-right: 3px;}
 .like_info li a span {
 }
 
