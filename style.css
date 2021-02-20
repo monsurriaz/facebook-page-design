@@ -342,7 +342,7 @@ nav .login_icon ul li a {
 
 .write_something_box input {
   width: 80%;
-  padding: 0px 20px;
+  padding: 0px 7px;
 }
 .own_posts .post {
   background-color: rgb(255, 255, 255);
@@ -517,7 +517,7 @@ nav .login_icon ul li a {
 }
 
 .follower_info {
-  padding: 9px;
+  padding: 10px;
   border-bottom: 1px solid rgb(222, 214, 214);
 }
 .follower_info .people_icon {
@@ -669,6 +669,7 @@ nav .login_icon ul li a {
 }
 .like_comment_box {
   background-color: rgb(255, 255, 255);
+  padding: 2px;
 }
 .like_comment_box .row {
   justify-content: center;
